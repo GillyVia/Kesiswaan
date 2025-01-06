@@ -1,0 +1,151 @@
+body {
+    background-color: #d1d5db; /* bg-gray-300 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 1640px;
+}
+
+.sidebar {
+    width: 10%;
+    background-color: black; /* bg-gray-400 */
+    padding: 100px; /* p-4 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px; /* mb-8 */
+}
+
+.profile-pic {
+    width: 96px; /* w-24 */
+    height: 96px; /* h-24 */
+    background-color: #4b5563; /* bg-gray-600 */
+    border-radius: 50%; /* rounded-full */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px; /* mb-2 */
+}
+
+.profile-pic i {
+    font-size: 32px; /* text-4xl */
+    color: white; /* text-gray-300 */
+}
+
+.profile-text {
+    font-weight: bold; /* font-bold */
+    text-align: center;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* space-y-4 */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.main-content {
+    flex: 1;
+    padding: 16px; /* p-4 */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px; /* mb-8 */
+}
+
+.header h1 {
+    font-size: 24px; /* text-2xl */
+    font-weight: bold; /* font-bold */
+}
+
+.header i {
+    font-size: 24px; /* text-2xl */
+}
+
+.content {
+    display: flex;
+    gap: 32px; /* space-x-8 */
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card.red {
+    background: #e74c3c;
+}
+
+.card.teal {
+    background: #1abc9c;
+}
+
+.card.green {
+    background: #2ecc71;
+}
+
+.card.orange {
+    background: #f39c12;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
